@@ -38,3 +38,22 @@ console.log(finalArray);
 let sortNumber = [1, 5 , 3 , 6 , 8]
 
 console.log('Before Sort array', sortNumber.sort()); // working single digit sort number 
+
+// Simple sort method end
+
+let bigSortNumber = [20, 50, 60, 5, 100, 9999, 0]
+console.log('big sort number', bigSortNumber);
+bigSortNumber.sort(function(num1, num2){
+    return num1-num2
+})
+
+console.log('Result =', bigSortNumber);
+
+// Arrow function sort 
+bigSortNumber.sort((numA, numB)=> numA-numB)// Assending order
+console.log('Arrow Fn Sort', bigSortNumber);
+
+bigSortNumber.sort((numX, numY)=> numY - numX)
+console.log('Arrow Desending Number', bigSortNumber);
+
+
