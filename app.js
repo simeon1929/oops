@@ -9,28 +9,26 @@ if(false) {
 
 //condtion checking
 
-let x = [1, 4  , 10, "'string'" , 30, 50, 2, 7]
-let stingFind = x.includes('string')
-console.log('String find', stingFind);
-console.log('Numbers = ', x);
-console.log('length ', x.length);
-letNewArr = x.forEach(arrayNum=>{
-    //console.log('arrayNumber', arrayNum);
-    let total = arrayNum -1
-    console.log('New Number', total);
-    //arrayNum.valueOf()
-    console.log('Includes', arrayNum.includes('string'));
+let arryX = [1, 4  , 10, 'string' , 30, 50, 2, 7]
+console.log('Original Array', arryX);
 
-       
+let StringArray = [] // Empty String array for push from the main array
+let numberArray = [] // Empty Number array for push from the main array
+arryX.forEach(arrayElem=>{
+    //console.log('ArrayDeails ', typeof(arrayElem));
+    //console.log(index);
+    if(typeof(arrayElem) === 'string') {
+       StringArray.push(arrayElem)
+    } else if (typeof(arrayElem) === 'number') {
+        numberArray.push(arrayElem)
+    } else {
+        console.log('Wrong value');
+    }  
 })
-// if(x.length > 5) {
-//     console.log('Array value is high');
-// }
+numberArray.sort()
+console.log('String Array', StringArray);
+console.log('Number Array', numberArray);
 
-// if(letNewArr > 0){
-//     console.log('new value');
-// }
-
-// else {
-//     console.log('Array value is low');
-// }
+//Adding Two arrays
+let finalArray = StringArray.concat(numberArray)
+console.log(finalArray);
