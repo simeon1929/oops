@@ -57,3 +57,38 @@ bigSortNumber.sort((numX, numY)=> numY - numX)
 console.log('Arrow Desending Number', bigSortNumber);
 
 
+// Test program 
+let subjects = ['Tamil', 'English', 'Maths', 'Science', 'Social Science']
+let simeon = [28, 50, 89, 65, 30]
+// let beulah = [80, 99, 65, 80, 86]
+// let Evania = [99, 100, 100, 100, 99]
+//let simeon = [100, 99, 99, 88, 99]
+
+let fixedMarks = 35
+let failString ='Fail'
+let passString = 'Pass'
+
+
+let simeonArry = simeon.forEach(elem =>{
+    console.log('Simeon Marks', elem);
+    if(fixedMarks < elem ) {
+        console.log(passString);
+        
+
+    } else if(fixedMarks > elem){
+        console.log(failString);
+        
+    }
+    
+    
+    if(passString !== passString) console.log('STUDENT PASS');
+    else if(failString) console.log('STUDENT FAIL');
+})
+
+
+
+
+
+
+
+
