@@ -27,8 +27,14 @@ arryX.forEach(arrayElem=>{
 })
 numberArray.sort()
 console.log('String Array', StringArray);
-console.log('Number Array', numberArray);
+console.log('Number Array', numberArray.sort());
 
 //Adding Two arrays
 let finalArray = StringArray.concat(numberArray)
 console.log(finalArray);
+
+// Sort method
+
+let sortNumber = [1, 5 , 3 , 6 , 8]
+
+console.log('Before Sort array', sortNumber.sort()); // working single digit sort number 
